@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yesika Yulia Sari</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #1e1e1e;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 8px 14px;
+      border-radius: 6px;
+      transition: background-color 0.3s;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      background-color: #fff;
+      color: #1e1e1e;
+    }
+
+    .section-skill {
+      background-color: #e9e9cb;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    .section-skill h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      border-bottom: 2px solid #222;
+      display: inline-block;
+      padding-bottom: 0.5rem;
+    }
+
+    .skill-layout {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .profile-photo {
+      flex: 1 1 250px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .profile-photo img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      transition: transform 0.3s ease;
+      border: 6px solid #ff5252;
+      object-fit: cover;
+    }
+
+    .profile-photo img:hover {
+      transform: scale(1.08) rotate(2deg);
+    }
+
+    .skill-container {
+      flex: 2 1 500px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .skill-box {
+      flex: 1 1 200px;
+      max-width: 250px;
+      background: #fff;
+      border-radius: 8px;
+      padding: 1rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: left;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .skill-box:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+    }
+
+    .skill-box img {
+      height: 32px;
+      margin-bottom: 0.5rem;
+    }
+
+    .skill-box h4 {
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+      color: #333;
+    }
+
+    .skill-box ul {
+      font-size: 0.9rem;
+      padding-left: 1.1rem;
+    }
+
+    footer {
+      background-color: #1e1e1e;
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    footer p {
+      margin: 0.4rem 0;
+    }
+
+    .social-icons {
+      margin: 1rem 0;
+    }
+
+    .social-icons a {
+      margin: 0 8px;
+      display: inline-block;
+    }
+
+    .social-icons img {
+      width: 24px;
+      height: 24px;
+      filter: brightness(0) invert(1);
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .skill-layout {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Yesika Yulia Sari</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">About Me</a></li>
+        <li><a href="index2.html">Experience</a></li>
+        <li><a href="index3.html">Skill</a></li>
+        <li><a href="index4.html">Certificate</a></li>
+        <li><a href="index5.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="section-skill">
+    <h2>Skill</h2>
+
+    <div class="skill-layout">
+      <div class="profile-photo">
+        <img src="images/profil.png" alt="Foto Selina">
+      </div>
+
+      <div class="skill-container">
+        <div class="skill-box">
+          <img src="images/mikrotik.jpg" alt="Mikrotik">
+          <h4>MikroTik</h4>
+          <ul>
+            <li>Introduction to MikroTik RouterOS and Winbox</li>
+            <li>Basic IP addressing and subnetting</li>
+            <li>DHCP Server and Client configuration</li>
+            <li>NAT (Masquerade, Port Forwarding) </li>
+            <li>Firewall and security settings</li>
+            <li>Bandwidth management (Queue, QoS)</li>
+            <li>Wireless and Hotspot configuration.</li>
+            <li>Tunnel/VPN</li>
+          </ul>
+        </div>
+        <div class="skill-box">
+          <img src="images/html.png" alt="HTML">
+          <h4>HTML</h4>
+          <ul>
+            <li>Basic Structure of HTML</li>
+            <li>Headings, paragraps, and texs formanting</li>
+            <li>Lists (ordered and undodered)</li>
+            <li>Links and navigation</li>
+            <li>Images and multimedi</li>
+            <li>Tables and data representationli</li>
+            <li>Froms and data from validation</li>
+            <li>Semantic HTML</li>
+          </ul>
+        </div>
+        <div class="skill-box">
+          <img src="images/google.png" alt="google">
+          <h4>goggle</h4>
+          <ul>
+            <li>Using Google Docs, Sheets, and Slides for Productivity</li>
+            <li>Email management with gmail (filter, label, autorestonder add-ons)</li>
+            <li>Set Schhedule and Collaboration with Google Calender</li>
+            <li>Share and manage files on Google Drive</li>
+            <li>Creating Forms and Survey with Google Forms</li>
+            <li>Using Google Meet for Online Meetin</li>
+          </ul>
+        </div>
+        <div class="skill-box">
+          <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript">
+          <h4>JavaScript</h4>
+          <ul>
+            <li>Basic Structure of HTML</li>
+            <li>Headings, paragraps, and text formanting</li>
+            <li>Lists (ordered and undodered)</li>
+            <li>Links and navigation</li>
+            <li>Images and multimedia</li>
+            <li>Tables and data representationli</li>
+            <li>Forms and form validation</li>
+            <li>Semantic HTML</li>
+          </ul>
+        </div>
+        <div class="skill-box">
+          <img src="images/css.jpg" alt="Css">
+          <h4>css</h4>
+          <ul>
+            <li>CSS selector (Element Selector, Selector ID, Class selector, Attibute, Combination Selector)</li>
+            <li>Basic CSS Properties (Color & Background, Text & Typography, Layout & Box Model, Display & Positioning)</li>
+            <li>Responsiveness & Media Queries</li>
+            <li>CSS Variable & Custom Properties</li>
+          </ul>
+        </div>
+        <div class="skill-box">
+          <img src="images/javascript.jpg" alt="javascript">
+          <h4>javascript</h4>
+          <ul>
+            <li>Installing and configuring Debian</li>
+            <li>Linux file system and basic CLI commands (ls, cd, rm, cp, mv)</li>
+            <li>Package management (apt, dpkg)</li>
+            <li>NUser and permissions management (chmod, chown, usermod)</li>
+            <li>Network configuration (Static IP, DHCP, SSH, firewall)</li>
+            <li>and service management (sysProcesstemctl, journalcti)</li>
+            <li>Web server setup (Apache, Nginx)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Hubungi Kami : 0815-5745-8545</p>
+    <p>Alamat : Jl. Penataran, Nglegok, Blitar, Jawa Timur</p>
+    <p>Jam Buka : Setiap Hari 16.00-00.00</p>
+    <div class="social-icons">
+      <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram" /></a>
+      <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/email.png" alt="Email" /></a>
+    </div>
+    <p>&copy; Coffee Candi. Sejak 2020.</p>
+  </footer>
+
+</body>
+</html>
